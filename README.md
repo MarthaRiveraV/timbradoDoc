@@ -2,6 +2,8 @@
 
 ## SOAP
 
+[Acuse cancelación](https://github.com/MarthaRiveraV/timbradoDoc/blob/master/Metodos/Acuse%20Cancelaci%C3%B3n.md)
+
 ### Content Type 
 
 Todas los requests deben contener un encabezado HTTP `Content-Type: text/xml; charset=utf-8`.
