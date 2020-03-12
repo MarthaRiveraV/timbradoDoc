@@ -2,70 +2,14 @@
 
 ## SOAP
 
-[Acuse cancelación](https://github.com/MarthaRiveraV/timbradoDoc/blob/master/Metodos/Acuse%20Cancelaci%C3%B3n.md)
+### Métodos
+
+*[acuseCancelacion](https://github.com/MarthaRiveraV/timbradoDoc/blob/master/Metodos/acuseCancelacion.md)
+*[cancelar](https://github.com/MarthaRiveraV/timbradoDoc/blob/master/Metodos/cancelar.md)
 
 ### Content Type 
 
 Todas los requests deben contener un encabezado HTTP `Content-Type: text/xml; charset=utf-8`.
-
-## acuseCancelacion
-
-```xml
-<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tim="timbrado.ws.pade.mx">
-   <soapenv:Header/>
-   <soapenv:Body>
-      <tim:acuseCancelacion>
-         <contrato>?</contrato>
-         <usuario>?</usuario>
-         <passwd>?</passwd>
-         <uuid>?</uuid>
-      </tim:acuseCancelacion>
-   </soapenv:Body>
-</soapenv:Envelope>
-```
-
-| Atributo      | Requerido | Descripción |
-| ------------- |:--------- |:----------- |
-| contrato      | Si        | Contrato de Pade Timbrado Fiscal. | 
-| usuario       | Si        | Usuario con el que se autenticará en el servicio. |
-| passwd        | Si        | Contraseña del usuario con el que se autenticará en el servicio. |
-| uuid          | Si        | Folio fiscal del comprobante del que se desea recuperar el acuse de cancelación. |
-
-
-## cancelar
-
-```xml
-<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tim="timbrado.ws.pade.mx">
-   <soapenv:Header/>
-   <soapenv:Body>
-      <tim:cancelar>
-         <contrato>?</contrato>
-         <usuario>?</usuario>
-         <passwd>?</passwd>
-         <!--Optional:-->
-         <rfcEmisor>?</rfcEmisor>
-         <!--Zero or more repetitions:-->
-         <arregloUUID>?</arregloUUID>
-         <!--Optional:-->
-         <cert>cid:175473078103</cert>
-         <!--Optional:-->
-         <key>cid:217884016038</key>
-         <!--Optional:-->
-         <keyPass>?</keyPass>
-      </tim:cancelar>
-   </soapenv:Body>
-</soapenv:Envelope>
-```
-| Atributo      | Requerido | Descripción |
-| ------------- |:--------- |:----------- |
-| contrato      | Si        | Contrato de Pade Timbrado Fiscal. | 
-| usuario       | Si        | Usuario con el que se autenticará en el servicio. |
-| passwd        | Si        | Contraseña del usuario con el que se autenticará en el servicio. |
-| rfcEmisor     | Si        |              |
-| arregloUUID   | Si        |              |
-| cert          | Si        |              |
-| key           | Si        |              |
-| keyPass       | Si        |              |
 
 
 ## cancelarConOpciones
