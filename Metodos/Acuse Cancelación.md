@@ -1,5 +1,8 @@
-# Acuse Cancelación
+# Método: acuseCancelacion
 
+El método *acuseCancelacion* retorna el acuse de cancelación proporcionado por el SAT en base64 cuando e el UUID inidicado en el método se encuentra previamente cancelado.
+
+## Request
 
 ```xml
 <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tim="timbrado.ws.pade.mx">
@@ -15,6 +18,8 @@
 </soapenv:Envelope>
 ```
 
+### Parámetros
+
 | Atributo      | Requerido | Descripción |
 | ------------- |:--------- |:----------- |
 | contrato      | Si        | Contrato de Pade Timbrado Fiscal. | 
@@ -22,13 +27,16 @@
 | passwd        | Si        | Contraseña del usuario con el que se autenticará en el servicio. |
 | uuid          | Si        | Folio fiscal del comprobante del que se desea recuperar el acuse de cancelación. |
 
+
+## Response 
+
 ```xml
 <servicioConsulta>
-  <contrato></contrato>
-  <consultaOk><consultaOk>
-  <codigo></codigo>
-  <xmlBase64></xmlBase64>
-  <mensaje></mensaje>
+  <contrato/>
+  <consultaOk/>
+  <codigo/>
+  <xmlBase64/>
+  <mensaje/>
 </servicioConsulta>
 ```
 
