@@ -34,8 +34,9 @@
 
 | Atributo      | Tipo      | Descripción |
 | ------------- |:--------- |:----------- |
-| contrato      | string    |
-| consultaOk    | boolean   |
-| codigo        | string    |
-| xmlBase64     | string    |
-| mensaje       | string    |
+| contrato      | string    | El contrato de Pade Timbrado Fiscal enviado por el usuario (informativo). |
+| consultaOk    | boolean   | Indica si la operación de timbrado fue concluida exitosamente. |
+| codigo        | string    | El código del servicio de consulta. [Códigos del servicio](https://github.com/MarthaRiveraV/timbradoDoc/blob/master/codigos.md)
+| xmlBase64     | string    | XML del acuse de cancelación del SAT, códificado en base64.
+| mensaje       | string    | En caso de que haya un error, se devolverá la descripción del mismo. |
+
