@@ -1,5 +1,5 @@
 
-# Códigos de respuesta cancelación
+# Códigos cancelación
 
 | Código | Descripción |
 | :----: | :---------------------------------------------------------------------------------------------- |
