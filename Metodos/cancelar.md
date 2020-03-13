@@ -46,14 +46,36 @@ El 1 de noviembre del 2018 los servicios de cancelación se actualizaron. Las fa
 	<statusOk/>
 	<rfc/>
 	<codigo/>
+	<procesados/>
+	<cancelados/>
 	<mensaje/>
 	<cancelaciones>
-	<cancelacion>
-	<uuid/>
-	<codigo/>
-	<mensaje/>
-	</cancelacion>
+		<cancelacion>
+			<uuid/>
+			<codigo/>
+			<mensaje/>
+		</cancelacion>
 	</cancelaciones>
 	<acuseCancelBase64/>
-	</servicioCancel>
+</servicioCancel>
 ```
+
+### servicioCancel
+
+| Atributo      | Tipo          | Descripción |
+| ------------- |:------------- |:----------- |
+| statusOk      | boolean       | Indica si la invocación del método fue concluida exitosamente. |
+| rfc           | string        | El RFC del emisor enviado por el usuario (informativo). |
+| codigo        | string        | El código del servicio de consulta. [Códigos del servicio](https://github.com/MarthaRiveraV/timbradoDoc/blob/master/codigos.md)
+| procesados    | int           | Indica el número de CFDI que fueron procesados para su cancelación. |
+| cancelados    | int           | Indica el numero de CFDI que posterior a su procesamientos, fueron efectivamente cancelados. |
+| mensaje       | string        | En caso de que haya un error, se devolverá la descripción del mismo. |
+| cancelaciones | Cancelacion[] | Nodo que expresa las cancelaciones. |
+| xmlBase64     | string        | XML del acuse de cancelación del SAT, códificado en base64. |
+
+### cancelacion
+| Atributo      | Tipo          | Descripción |
+| ------------- |:------------- |:----------- |
+| uuid          | string        | UUID del CFDI procesado. | https://github.com/MarthaRiveraV/timbradoDoc/blob/master/codigosCancelacion.md
+| codigo        | string        | El código del servicio de cancelación. [Códigos de cancelación](https://github.com/MarthaRiveraV/timbradoDoc/blob/master/codigosCancelacion.md)
+| mensaje       | string        | En caso de que haya un error, se devolverá la descripción del mismo. |
