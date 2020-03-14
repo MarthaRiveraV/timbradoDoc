@@ -27,16 +27,38 @@ El 1 de noviembre del 2018 los servicios de cancelación se actualizaron. Las fa
 
 ### Parámetros
 
-| Atributo      | Requerido | Tipo      | Descripción |
-| ------------- |:--------- |:--------- |:----------- |
-| contrato      | Si        | String | Contrato de Pade Timbrado Fiscal. | 
-| usuario       | Si        | String | Usuario con el que se autenticará en el servicio. |
-| passwd        | Si        | String | Contraseña del usuario con el que se autenticará en el servicio. |
-| rfcEmisor     | Si        | String | RFC del emisor al que pertenecen los CFDI a cancelar. |
-| arregloUUID   | Si        |String[] | UUID, RFC Receptor, RFC Emisor y Total del CFDI a cancelar, separada por el carácter pipe (\|). **Ejemplo**: <arregloUUID>UUID\|RFC_Receptor\|RFC_Emisor\|Total</arregloUUID> |
-| cert          | Si        | byte[] | Certificado de Sello Digital (CSD). Debe ser el mismo con el que se genero el sello digital de los CFDI a cancelar.         |
-| key           | Si        | byte[] | Llave privada del CSD. |
-| keyPass       | Si        | String | Contraseña de la llave privada del CSD. |
+| Atributo      | Requerido   | Tipo      | Descripción |
+| ------------- |:----------- |:--------- |:----------- |
+| contrato      | Si          | String    | Contrato de Pade Timbrado Fiscal. | 
+| usuario       | Si          | String    | Usuario con el que se autenticará en el servicio. |
+| passwd        | Si          | String    | Contraseña del usuario con el que se autenticará en el servicio. |
+| rfcEmisor     | Si          | String    | RFC del emisor al que pertenecen los CFDI a cancelar. |
+| arregloUUID   | Si           |String[]   | UUID, RFC Receptor, RFC Emisor y Total del CFDI a cancelar, separada por el carácter pipe (\|). **Ejemplo**: <arregloUUID>UUID\|RFC_Receptor\|RFC_Emisor\|Total</arregloUUID> |
+| cert          | Condicional | byte[]   | Certificado de Sello Digital (CSD). Debe ser el mismo con el que se genero el sello digital de los CFDI a cancelar. |
+| key           | Condicional | byte[]   | Llave privada del CSD. |
+| keyPass       | Si          | String   | Contraseña de la llave privada del CSD. |
+| opciones      | Si          | String[] | Opciones para el servicio de cancelación. |
+
+### Opciones
+
+#### PKCS12     
+Esta opción acepta el Certificado de sello Digital (CSD) y la Llave Privada empaquetados en un archivo con formato PKCS12 protegido mediante la contraseña de la Llave Privada códificado en base 64.
+
+**Formato**
+PKCS12:pkcs12_base64
+
+"pkcs12_base64" corresponde al archivo códificado en base 64.
+
+**Observaciones**
+* Omitir parámetros *cert* y *key*.
+* El alias donde se encuentran alojados el CSD y Llave Privada, debe corresponder al RFC del emisor (Mayúsculas).
+* Se debe especificar el parámetro keyPass. Esta contraseña es la que se emplea para leer el archivo PKCS12 y debe corresponder a la contraseña de la llave privada del emisor.
+
+* XML_CANCELACION 
+* CERT_DEFAULT    
+* CONSULTAR_SALDO 
+
+....
 
 
 ## Response
