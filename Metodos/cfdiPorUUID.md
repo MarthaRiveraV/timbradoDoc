@@ -1,6 +1,6 @@
 # Método: cfdiPorUUID
 
-El método *cfdiPorUUID* recibe el UUID (Folio fiscal) de un Comprobante Fiscal Digital por Internet (CFDI) timbrado por [Prodigia®](https://prodigia.com.mx/), retorna el XML del CFDI codificado en base64.
+El método *cfdiPorUUID* recibe el UUID (Folio fiscal) de un Comprobante Fiscal Digital por Internet (CFDI) previamente timbrado por [Prodigia®](https://prodigia.com.mx/), retorna el XML del CFDI codificado en base64.
 
 ## Request
 
