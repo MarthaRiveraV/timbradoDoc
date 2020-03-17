@@ -82,7 +82,7 @@ PKCS12:pkcs12_base64
 </servicioCancel>
 ```
 
-### servicioCancel
+### `<servicioCancel/>`
 
 | Atributo      | Tipo          | Descripción |
 | ------------- |:------------- |:----------- |
@@ -95,7 +95,7 @@ PKCS12:pkcs12_base64
 | cancelaciones | Cancelacion[] | Nodo que expresa las cancelaciones. |
 | xmlBase64     | string        | XML del acuse de cancelación del SAT, códificado en base64. |
 
-### cancelacion
+### `<cancelacion/>`
 | Atributo      | Tipo          | Descripción |
 | ------------- |:------------- |:----------- |
 | uuid          | string        | UUID del CFDI procesado. | https://github.com/MarthaRiveraV/timbradoDoc/blob/master/codigosCancelacion.md
