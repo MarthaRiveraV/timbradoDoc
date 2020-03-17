@@ -1,4 +1,6 @@
-## consultarDisponibilidadServicio
+# consultarDisponibilidadServicio
+
+## Request
 
 ```xml
 <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tim="timbrado.ws.pade.mx">
@@ -12,6 +14,8 @@
    </soapenv:Body>
 </soapenv:Envelope>
 ```
+
+### Parámetros
 
 | Atributo      | Requerido | Descripción |
 | ------------- |:--------- |:----------- |
