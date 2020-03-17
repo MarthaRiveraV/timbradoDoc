@@ -1,5 +1,7 @@
 # consultarDisponibilidadServicio
 
+El método consultarDisponibilidadServicio permite autentificarse ante el servicio con el objetivo de verificar la disponibilidad y acceso al servicio.
+
 ## Request
 
 ```xml
@@ -17,8 +19,8 @@
 
 ### Parámetros
 
-| Atributo      | Requerido | Descripción |
-| ------------- |:--------- |:----------- |
-| contrato      | Si        | Contrato de Pade Timbrado Fiscal. | 
-| usuario       | Si        | Usuario con el que se autenticará en el servicio. |
-| passwd        | Si        | Contraseña del usuario con el que se autenticará en el servicio. |
+| Atributo      | Requerido | Tipo   | Descripción |
+| ------------- |:--------- |:------ |:----------- |
+| contrato      | Si        | String | Contrato de Pade Timbrado Fiscal. | 
+| usuario       | Si        | String | Usuario con el que se autenticará en el servicio. |
+| passwd        | Si        | String | Contraseña del usuario con el que se autenticará en el servicio. |
