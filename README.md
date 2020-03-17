@@ -2,140 +2,15 @@
 
 ## SOAP
 
-### Métodos
-
-*[acuseCancelacion](https://github.com/MarthaRiveraV/timbradoDoc/blob/master/Metodos/acuseCancelacion.md)
-*[cancelar](https://github.com/MarthaRiveraV/timbradoDoc/blob/master/Metodos/cancelar.md)
+* [acuseCancelacion](https://github.com/MarthaRiveraV/timbradoDoc/blob/master/Metodos/Acuse%20Cancelaci%C3%B3n.md)
+* [cancelar](https://github.com/MarthaRiveraV/timbradoDoc/blob/master/Metodos/cancelar.md)
+* [cancelarConOpciones](https://github.com/MarthaRiveraV/timbradoDoc/blob/master/Metodos/cancelarConOpciones.md)
+* [cfdiPorUUID](https://github.com/MarthaRiveraV/timbradoDoc/blob/master/Metodos/cfdiPorUUID.md)
+* [consultarCfdiRelacionados](https://github.com/MarthaRiveraV/timbradoDoc/blob/master/Metodos/consultarCfdiRelacionados.md)
 
 ### Content Type 
 
 Todas los requests deben contener un encabezado HTTP `Content-Type: text/xml; charset=utf-8`.
-
-
-## cancelarConOpciones
-
-```xml
-<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tim="timbrado.ws.pade.mx">
-   <soapenv:Header/>
-   <soapenv:Body>
-      <tim:cancelarConOpciones>
-         <contrato>?</contrato>
-         <usuario>?</usuario>
-         <passwd>?</passwd>
-         <!--Optional:-->
-         <rfcEmisor>?</rfcEmisor>
-         <!--Zero or more repetitions:-->
-         <arregloUUID>?</arregloUUID>
-         <!--Optional:-->
-         <cert>cid:1144384445270</cert>
-         <!--Optional:-->
-         <key>cid:157209680266</key>
-         <!--Optional:-->
-         <keyPass>?</keyPass>
-         <!--Zero or more repetitions:-->
-         <opciones>?</opciones>
-      </tim:cancelarConOpciones>
-   </soapenv:Body>
-</soapenv:Envelope>
-```
-
-| Atributo      | Requerido | Descripción |
-| ------------- |:--------- |:----------- |
-| contrato      | Si        | Contrato de Pade Timbrado Fiscal. | 
-| usuario       | Si        | Usuario con el que se autenticará en el servicio. |
-| passwd        | Si        | Contraseña del usuario con el que se autenticará en el servicio. |
-| rfcEmisor     | Si       |              |
-| arregloUUID   | Si       |              |
-| cert          | Si       |              |
-| key           | Si       |              |
-| keyPass       | Si       |              |
-| opciones      | Si       |              |
-
-## cfdiPorUUID
-
-```xml
-<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tim="timbrado.ws.pade.mx">
-   <soapenv:Header/>
-   <soapenv:Body>
-      <tim:cfdiPorUUID>
-         <contrato>?</contrato>
-         <usuario>?</usuario>
-         <passwd>?</passwd>
-         <!--Optional:-->
-         <uuid>?</uuid>
-      </tim:cfdiPorUUID>
-   </soapenv:Body>
-</soapenv:Envelope>
-```
-
-| Atributo      | Requerido | Descripción |
-| ------------- |:--------- |:----------- |
-| contrato      | Si        | Contrato de Pade Timbrado Fiscal. | 
-| usuario       | Si        | Usuario con el que se autenticará en el servicio. |
-| passwd        | Si        | Contraseña del usuario con el que se autenticará en el servicio. |
-| uuid          | Si       |              |
-
-
-## consultarCfdiRelacionados
-
-```xml
-<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tim="timbrado.ws.pade.mx">
-   <soapenv:Header/>
-   <soapenv:Body>
-      <tim:consultarCfdiRelacionados>
-         <contrato>?</contrato>
-         <usuario>?</usuario>
-         <passwd>?</passwd>
-         <!--Optional:-->
-         <rfcReceptor>?</rfcReceptor>
-         <!--Optional:-->
-         <uuid>?</uuid>
-         <!--Optional:-->
-         <cert>cid:830565485722</cert>
-         <!--Optional:-->
-         <key>cid:1056772432149</key>
-         <!--Optional:-->
-         <keyPass>?</keyPass>
-         <!--Zero or more repetitions:-->
-         <opciones>?</opciones>
-      </tim:consultarCfdiRelacionados>
-   </soapenv:Body>
-</soapenv:Envelope>
-```
-
-| Atributo      | Requerido | Descripción |
-| ------------- |:--------- |:----------- |
-| contrato      | Si        | Contrato de Pade Timbrado Fiscal. | 
-| usuario       | Si        | Usuario con el que se autenticará en el servicio. |
-| passwd        | Si        | Contraseña del usuario con el que se autenticará en el servicio. |
-| rfcReceptor   | Si       |              |
-| uuid          | Si       |              |
-| cert          | Si       |              |
-| key           | Si       |              |
-| keyPass       | Si       |              |
-| opciones      | Si       |              |
-
-
-## consultarDisponibilidadServicio
-
-```xml
-<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tim="timbrado.ws.pade.mx">
-   <soapenv:Header/>
-   <soapenv:Body>
-      <tim:consultarDisponibilidadServicio>
-         <contrato>?</contrato>
-         <usuario>?</usuario>
-         <passwd>?</passwd>
-      </tim:consultarDisponibilidadServicio>
-   </soapenv:Body>
-</soapenv:Envelope>
-```
-
-| Atributo      | Requerido | Descripción |
-| ------------- |:--------- |:----------- |
-| contrato      | Si        | Contrato de Pade Timbrado Fiscal. | 
-| usuario       | Si        | Usuario con el que se autenticará en el servicio. |
-| passwd        | Si        | Contraseña del usuario con el que se autenticará en el servicio. |
 
 
 ## consultarEstatusComprobante
