@@ -54,6 +54,9 @@ CERT_DEFAULT
 #### CONSULTAR_SALDO 
 Esta opción retorna las transacciones disponibles del contrato enviado después de que el servicio descuente las cancelaciones efectivamente realizadas.
 
+**Formato**
+CONSULTAR_SALDO
+
 #### PKCS12     
 Esta opción acepta el Certificado de sello Digital (CSD) y la Llave Privada empaquetados en un archivo con formato PKCS12 protegido mediante la contraseña de la Llave Privada códificado en base 64.
 
