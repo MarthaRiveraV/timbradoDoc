@@ -1,6 +1,7 @@
 # Método: acuseCancelacion
 
-El método *acuseCancelacion* retorna el acuse de cancelación proporcionado por el SAT en base64 cuando e el UUID inidicado en el método se encuentra previamente cancelado.
+
+El método *acuseCancelacion* recibe el UUID (Folio fiscal) de un Comprobante Fiscal Digital por Internet (CFDI) previamente cancelado, retorna el acuse de cancelación proporcionado por el SAT codificado en base64.
 
 ## Request
 
@@ -20,12 +21,12 @@ El método *acuseCancelacion* retorna el acuse de cancelación proporcionado por
 
 ### Parámetros
 
-| Atributo      | Requerido | Descripción |
-| ------------- |:--------- |:----------- |
-| contrato      | Si        | Contrato de Pade Timbrado Fiscal. | 
-| usuario       | Si        | Usuario con el que se autenticará en el servicio. |
-| passwd        | Si        | Contraseña del usuario con el que se autenticará en el servicio. |
-| uuid          | Si        | Folio fiscal del comprobante del que se desea recuperar el acuse de cancelación. |
+| Atributo      | Requerido | Tipo   | Descripción |
+| ------------- |:--------- |:------ |:----------- |
+| contrato      | Si        | String | Contrato de Pade Timbrado Fiscal. | 
+| usuario       | Si        | String | Usuario con el que se autenticará en el servicio. |
+| passwd        | Si        | String | Contraseña del usuario con el que se autenticará en el servicio. |
+| uuid          | Si        | String | Folio fiscal del comprobante del que se desea recuperar el acuse de cancelación. |
 
 
 ## Response 
@@ -40,10 +41,12 @@ El método *acuseCancelacion* retorna el acuse de cancelación proporcionado por
 </servicioConsulta>
 ```
 
+### `<servicioConsulta/>`
+
 | Atributo      | Tipo      | Descripción |
 | ------------- |:--------- |:----------- |
 | contrato      | string    | El contrato de Pade Timbrado Fiscal enviado por el usuario (informativo). |
-| consultaOk    | boolean   | Indica si la operación de timbrado fue concluida exitosamente. |
+| consultaOk    | boolean   | Indica si la operación fue concluida exitosamente. |
 | codigo        | string    | El código del servicio de consulta. [Códigos del servicio](https://github.com/MarthaRiveraV/timbradoDoc/blob/master/codigos.md)
 | xmlBase64     | string    | XML del acuse de cancelación del SAT, códificado en base64.
 | mensaje       | string    | En caso de que haya un error, se devolverá la descripción del mismo. |
