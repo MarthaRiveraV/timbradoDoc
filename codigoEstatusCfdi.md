@@ -13,4 +13,4 @@
 | 8	     | **Cancelado con aceptación**. El CFDI se encuentra Cancelado y se requirió aceptación del receptor para cancelarlo. |
 | 9	     | **Cancelado sin aceptación**. El CFDI se encuentra Cancelado y no se requirió aceptación del receptor para cancelarlo. |
 | 10     | **Cancelado por plazo vencido**. El CFDI se encuentra Cancelado y  no hubo una respuesta del receptor en las 72 horas hábiles posteriores a la solicitud de cancelación. |
-| 99 	   | **Indeterminado**. Error en la interpretación de la respuesta del SAT o cuando no hay una respuesta(que el servicio no se encuentre disponible). |
+| 99 	   | **Indeterminado**. Error en la interpretación de la respuesta del SAT. |
