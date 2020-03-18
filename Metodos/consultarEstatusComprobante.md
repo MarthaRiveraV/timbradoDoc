@@ -33,11 +33,11 @@ El 1 de noviembre del 2018 los servicios de cancelación se actualizaron. Las fa
 | contrato      | Si        | String   | Contrato de Pade Timbrado Fiscal. | 
 | usuario       | Si        | String   | Usuario con el que se autenticará en el servicio. |
 | passwd        | Si        | String   | Contraseña del usuario con el que se autenticará en el servicio. |
-| uuid          | Si        | String   |             |
-| rfcEmisor     | Si        | String   |             |
-| rfcReceptor   | Si        | String   |             |
-| total         | Si        | String   |             |
-| opciones      | Si        | String[] |             |
+| uuid          | Si        | String   | Folio fiscal del CFDI a consultar. |
+| rfcEmisor     | Si        | String   | RFC Emisor del CFDI a consultar. |
+| rfcReceptor   | Si        | String   | RFC Receptor del CFDI a consultar. |
+| total         | Si        | String   | Total del CFDI a consultar. |
+| opciones      | Si        | String[] | Opciones para el servicio. |
 
 ## Response
 
