@@ -65,7 +65,7 @@ El método *responderSolicitudCancelacionConOpciones* permite responder las peti
         <respuesta/>
       <Folio/>
     </Folios>
-	</servicioAceptacionRechazo>
+</servicioAceptacionRechazo>
 ```
 
 
