@@ -28,7 +28,7 @@ El método *consultarPeticionesPendientes* recibe el rfc de un contribuyente, re
 | usuario       | Si        | String   | Usuario con el que se autenticará en el servicio. |
 | passwd        | Si        | String   | Contraseña del usuario con el que se autenticará en el servicio. |
 | rfcReceptor   | Si        | String   | RFC del contribuyente del que se desea consultar las peticiones de cancelación que tiene como receptor de los CFDI. |
-| opciones      | Si        | String[] |          
+| opciones      | Si        | String[] | Opciones para el servicio. |        
 
 ## Response
 
@@ -48,7 +48,7 @@ El método *consultarPeticionesPendientes* recibe el rfc de un contribuyente, re
 | Atributo      | Tipo     | Descripción |
 | ------------- |:-------- |:----------- |
 | consultaOk    | boolean  | Indica si la invocación del método fue concluida exitosamente. |
-| codigo        | String   | El código del servicio de consulta. [Códigos del servicio](https://github.com/MarthaRiveraV/timbradoDoc/blob/master/codigos.md)
+| codigo        | String   | El código del servicio de consulta. [Códigos del servicio](https://github.com/MarthaRiveraV/timbradoDoc/blob/master/codigos.md) |
 | codigoEstatus | String   | Descripción del código. |
 | uuids         | uuid[]   | Nodo que expresa los uuid. |
 | uuid          | String   | Folio fiscal del CFDI del que se solicita aceptación por parte del contribuyente para su cancelación. |
