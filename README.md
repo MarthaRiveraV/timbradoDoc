@@ -14,7 +14,7 @@ Todas los requests deben contener un encabezado HTTP `Content-Type: text/xml; ch
 
 ### Métodos
 
-* [acuseCancelacion](https://github.com/MarthaRiveraV/timbradoDoc/blob/master/Metodos/Acuse%20Cancelaci%C3%B3n.md)
+* [acuseCancelacion](https://github.com/MarthaRiveraV/timbradoDoc/blob/master/Metodos/acuseCancelacion.md)
 * [cancelar](https://github.com/MarthaRiveraV/timbradoDoc/blob/master/Metodos/cancelar.md)
 * [cancelarConOpciones](https://github.com/MarthaRiveraV/timbradoDoc/blob/master/Metodos/cancelarConOpciones.md)
 * [cfdiPorUUID](https://github.com/MarthaRiveraV/timbradoDoc/blob/master/Metodos/cfdiPorUUID.md)
