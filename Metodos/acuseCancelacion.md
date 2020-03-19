@@ -45,9 +45,9 @@ El método *acuseCancelacion* recibe el UUID (Folio fiscal) de un Comprobante Fi
 
 | Atributo      | Tipo      | Descripción |
 | ------------- |:--------- |:----------- |
-| contrato      | string    | El contrato de Pade Timbrado Fiscal enviado por el usuario (informativo). |
+| contrato      | string    | Contrato de Pade Timbrado Fiscal enviado por el usuario (informativo). |
 | consultaOk    | boolean   | Indica si la operación fue concluida exitosamente. |
-| codigo        | string    | El código del servicio de consulta. [Códigos del servicio](https://github.com/MarthaRiveraV/timbradoDoc/blob/master/codigos.md)
+| codigo        | string    | Código del servicio de consulta. [Códigos del servicio](https://github.com/MarthaRiveraV/timbradoDoc/blob/master/codigos.md)
 | xmlBase64     | string    | XML del acuse de cancelación del SAT, códificado en base64.
 | mensaje       | string    | En caso de que haya un error, se devolverá la descripción del mismo. |
 
