@@ -2,6 +2,12 @@
 
 ## SOAP
 
+
+### Web Service Description Language (WSDL)
+
+El servicio se encuentra disponible en una dirección URL pública:
+http://timbrado.pade.mx/servicio/Timbrado3.3?wsdl
+
 ### Content Type 
 
 Todas los requests deben contener un encabezado HTTP `Content-Type: text/xml; charset=utf-8`.
