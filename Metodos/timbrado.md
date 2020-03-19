@@ -29,7 +29,7 @@ El método *timbrado* recibe el XML de un Comprobante Fiscal Digital por Interne
 | contrato      | Si        | String   | Contrato de Pade Timbrado Fiscal. | 
 | usuario       | Si        | String   | Usuario con el que se autenticará en el servicio. |
 | passwd        | Si        | String   | Contraseña del usuario con el que se autenticará en el servicio. |
-| cfdiXml.      | Si        | String   | XML del CFDI que a timbrar en texto plano. |
+| cfdiXml       | Si        | String   | XML del CFDI que a timbrar en texto plano. |
 | opciones      | Si        | String[] | Opciones para el servicio. | 
 
 
