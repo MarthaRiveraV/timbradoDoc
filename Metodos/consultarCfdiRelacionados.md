@@ -71,7 +71,7 @@ El método *consultarCfdiRelacionados* recibe el UUID (Folio fiscal) de un Compr
 | Atributo               | Tipo          | Descripción |
 | ---------------------- |:------------- |:----------- |
 | consultaOk             | boolean       | Indica si la invocación del método fue concluida exitosamente. |
-| UuidConsultado         | String	 | El contrato de Pade Timbrado Fiscal enviado por el usuario (informativo). |
+| UuidConsultado         | String	 | Contrato de Pade Timbrado Fiscal enviado por el usuario (informativo). |
 | codigo                 | String        | Código de respuesta del servicio del SAT. |
 | mensaje                | String        | Mensaje del servicio del SAT, se retorna en caso de ocurrir un error. |
 | resultado              | String        | Resultado de la consulta realizada por el servicio del SAT. |
@@ -83,15 +83,15 @@ El método *consultarCfdiRelacionados* recibe el UUID (Folio fiscal) de un Compr
 | Atributo    | Tipo   | Descripción |
 | ----------- |:------ |:----------- |
 | Uuid        | String | Folio fiscal del CFDI. |      
-| RfcEmisor   | String | Rfc emisor del CFDI. | 
-| RfcReceptor | String | Rfc receptor del CFDI. | 
+| RfcEmisor   | String | RFC emisor del CFDI. | 
+| RfcReceptor | String | RFC receptor del CFDI. | 
 
 ### `<UuidRelacionado/>`
 
 | Atributo    | Tipo   | Descripción |
 | ----------- |:------ |:----------- |
 | Uuid        | String | Folio fiscal del CFDI. | 
-| RfcEmisor   | String | Rfc emisor del CFDI. |
-| RfcReceptor | String | Rfc receptor del CFDI. |
+| RfcEmisor   | String | RFC emisor del CFDI. |
+| RfcReceptor | String | RFC receptor del CFDI. |
 
 
