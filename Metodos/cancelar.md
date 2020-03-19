@@ -66,11 +66,11 @@ El 1 de noviembre del 2018 los servicios de cancelación se actualizaron. Las fa
 | statusOk      | boolean       | Indica si la invocación del método fue concluida exitosamente. |
 | rfc           | string        | RFC del emisor enviado por el usuario (informativo). |
 | codigo        | string        | Código del servicio de consulta. [Códigos del servicio](https://github.com/MarthaRiveraV/timbradoDoc/blob/master/codigos.md)
-| procesados    | int           | Número de CFDI que fueron procesados para su cancelación. |
-| cancelados    | int           | Numero de CFDI que posterior a su procesamientos, fueron efectivamente cancelados. |
+| procesados    | int           | Número de CFDI's que fueron procesados para su cancelación. |
+| cancelados    | int           | Número de CFDI's que posterior a su procesamiento, fueron efectivamente cancelados. |
 | mensaje       | string        | En caso de que haya un error, se devolverá la descripción del mismo. |
 | cancelaciones | Cancelacion[] | Nodo que expresa las cancelaciones. |
-| xmlBase64     | string        | XML del acuse de cancelación del SAT, códificado en base64. |
+| xmlBase64     | string        | XML del acuse de cancelación del SAT, codificado en base64. |
 
 ### `<cancelacion/>`
 | Atributo      | Tipo          | Descripción |
