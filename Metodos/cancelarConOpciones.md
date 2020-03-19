@@ -58,12 +58,12 @@ Esta opción retorna las transacciones disponibles del contrato enviado después
 CONSULTAR_SALDO
 
 #### PKCS12     
-Esta opción acepta el Certificado de sello Digital (CSD) y la Llave Privada empaquetados en un archivo con formato PKCS12 protegido mediante la contraseña de la Llave Privada códificado en base 64.
+Esta opción acepta el Certificado de sello Digital (CSD) y la Llave Privada empaquetados en un archivo con formato PKCS12 protegido mediante la contraseña de la Llave Privada codificado en base 64.
 
 **Formato**
 PKCS12:pkcs12_base64
 
-"pkcs12_base64" corresponde al archivo PKCS12 códificado en base 64.
+"pkcs12_base64" corresponde al archivo PKCS12 codificado en base 64.
 
 **Observaciones**
 * Omitir parámetros *cert* y *key*.
@@ -111,12 +111,12 @@ XML_CANCELACION:xml_base64
 | statusOk      | boolean       | Indica si la invocación del método fue concluida exitosamente. |
 | rfc           | string        | RFC del emisor enviado por el usuario (informativo). |
 | codigo        | string        | Código del servicio de consulta. [Códigos del servicio](https://github.com/MarthaRiveraV/timbradoDoc/blob/master/codigos.md)
-| procesados    | int           | Número de CFDI que fueron procesados para su cancelación. |
-| cancelados    | int           | Numero de CFDI que posterior a su procesamientos, fueron efectivamente cancelados. |
+| procesados    | int           | Número de CFDI's que fueron procesados para su cancelación. |
+| cancelados    | int           | Numero de CFDI's que posterior a su procesamiento, fueron efectivamente cancelados. |
 | mensaje       | string        | En caso de que haya un error, se devolverá la descripción del mismo. |
 | cancelaciones | Cancelacion[] | Nodo que expresa las cancelaciones. |
-| xmlBase64     | string        | XML del acuse de cancelación del SAT, códificado en base64. |
-| saldo         | int           | Transacciones disponibles para el contrato con el que se autentifico el usuario. Retornado unicamente cuando la transacción es exitosa. |
+| xmlBase64     | string        | XML del acuse de cancelación del SAT, codificado en base64. |
+| saldo         | int           | Transacciones disponibles para el contrato con el que se autentifico el usuario. Retornado únicamente cuando la transacción es exitosa. |
 
 ### `<cancelacion/>`
 | Atributo      | Tipo          | Descripción |
