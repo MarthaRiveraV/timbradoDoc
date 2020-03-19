@@ -120,7 +120,7 @@ REGRESAR_CADENA_ORIGINAL
 | id               | Si          | String  | Identificador interno en formato UUID, sin relación alguna al CFDI (informativo). |
 | timbradoOk       | Si          | boolean | Indica Indica si la invocación del método fue concluida exitosamente. |
 | contrato         | Si          | String  | Contrato de Pade Timbrado Fiscal con el que se efectuo la operación (informativo).
-| codigo           | Si          | String  | Código de la operación del servicio [Códigos del servicio](https://github.com/MarthaRiveraV/timbradoDoc/blob/master/codigos.md). / Código de la validación definido por el SAT |
+| codigo           | Si          | String  | Código de la operación del servicio [Códigos del servicio](https://github.com/MarthaRiveraV/timbradoDoc/blob/master/codigos.md). / Código de la validación definido por el SAT. |
 | mensaje          | Condicional | String | En caso de que haya un error, se devolverá la descripción del mismo. De existir más de uno estos son separados por el caracter pipe (\|). |
 | version          | Condicional | String | Versión del Timbre Fiscal Digital generado, elemento del nodo <tfd:TimbreFiscalDigital> del CFDI. Retornado cuando la transacción es exitosa. |
 | uuid             | Condicional | String | Folio fiscal asignado al CFDI timbrado, elemento del nodo <tfd:TimbreFiscalDigital> del CFDI. Retornado cuando la transacción es exitosa.|
