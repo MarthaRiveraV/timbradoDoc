@@ -1,6 +1,6 @@
 # consultarPeticionesPendientes
 
-El método *consultarPeticionesPendientes* recibe el rfc de un contribuyente, retorna las peticiones pendientes de cancelación que tiene el contribuyente como receptor de Comprobantes Fiscales Digitales por Internet (CFDI).
+El método *consultarPeticionesPendientes* recibe el RFC de un contribuyente, retorna las peticiones pendientes de cancelación que tiene el contribuyente como receptor de Comprobantes Fiscales Digitales por Internet (CFDI).
 
 ## Request
 
@@ -50,6 +50,6 @@ El método *consultarPeticionesPendientes* recibe el rfc de un contribuyente, re
 | consultaOk    | boolean  | Indica si la invocación del método fue concluida exitosamente. |
 | codigo        | String   | El código del servicio de consulta. [Códigos del servicio](https://github.com/MarthaRiveraV/timbradoDoc/blob/master/codigos.md) |
 | codigoEstatus | String   | Descripción del código. |
-| uuids         | uuid[]   | Nodo que expresa los uuid. |
+| uuids         | uuid[]   | Nodo que expresa los UUID. |
 | uuid          | String   | Folio fiscal del CFDI del que se solicita aceptación por parte del contribuyente para su cancelación. |
 | mensaje       | String   | En caso de que haya un error, se devolverá la descripción del mismo. | 
