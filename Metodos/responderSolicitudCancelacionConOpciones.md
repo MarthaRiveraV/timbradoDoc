@@ -38,7 +38,7 @@ El método *responderSolicitudCancelacionConOpciones* permite responder las peti
 | usuario       | Si        | String   | Usuario con el que se autenticará en el servicio. |
 | passwd        | Si        | String   | Contraseña del usuario con el que se autenticará en el servicio. |
 | rfcReceptor   | Si        | String   | RFC del contribuyente del que responde las peticiones de cancelación que tiene como receptor de los CFDI.
-| arregloUUID   | Si        | String[] | UUID y respuesta a la peticipión (`Aceptación` o `Rechazo`), separada por el carácter pipe (\|). **Ejemplo**: `UUID|Aceptacion` `UUID|Rechazo` |
+| arregloUUID   | Si        | String[] | UUID y respuesta a la petición (`Aceptación` o `Rechazo`), separada por el carácter pipe (\|). **Ejemplo**: `UUID|Aceptacion` `UUID|Rechazo` |
 | cert          | Si        | byte[]   | Certificado de Sello Digital (CSD). |
 | key           | Si        | byte[]   | Llave privada del CSD. |
 | keyPass       | Si        | String   | Contraseña de la llave privada del CSD. |
@@ -76,7 +76,7 @@ El método *responderSolicitudCancelacionConOpciones* permite responder las peti
 | procesoOk     | boolean  | Indica si la invocación del método fue concluida exitosamente. |
 | codigo        | String   | El código del servicio de consulta. [Códigos del servicio](https://github.com/MarthaRiveraV/timbradoDoc/blob/master/codigos.md) |
 | codigoEstatus | String   | Descripción del código. |
-| rfcReceptor   | String   | String   | RFC del contribuyente que responde las peticiones de cancelación como receptor de los CFDI. |
+| rfcReceptor   | String   | RFC del contribuyente que responde las peticiones de cancelación como receptor de los CFDI. |
 | rfcPac        | String   | RFC del Proveedor Autorizado de Certificación (PAC) que realizó la cancelación.
 | fecha         | String   | Fecha en la que se responde la petición. |
 | Folios        | Folio[]  | Nodo que expresa los folios. |
