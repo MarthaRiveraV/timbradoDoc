@@ -109,10 +109,10 @@ XML_CANCELACION:xml_base64
 | Atributo      | Tipo          | Descripción |
 | ------------- |:------------- |:----------- |
 | statusOk      | boolean       | Indica si la invocación del método fue concluida exitosamente. |
-| rfc           | string        | El RFC del emisor enviado por el usuario (informativo). |
-| codigo        | string        | El código del servicio de consulta. [Códigos del servicio](https://github.com/MarthaRiveraV/timbradoDoc/blob/master/codigos.md)
-| procesados    | int           | Indica el número de CFDI que fueron procesados para su cancelación. |
-| cancelados    | int           | Indica el numero de CFDI que posterior a su procesamientos, fueron efectivamente cancelados. |
+| rfc           | string        | RFC del emisor enviado por el usuario (informativo). |
+| codigo        | string        | Código del servicio de consulta. [Códigos del servicio](https://github.com/MarthaRiveraV/timbradoDoc/blob/master/codigos.md)
+| procesados    | int           | Número de CFDI que fueron procesados para su cancelación. |
+| cancelados    | int           | Numero de CFDI que posterior a su procesamientos, fueron efectivamente cancelados. |
 | mensaje       | string        | En caso de que haya un error, se devolverá la descripción del mismo. |
 | cancelaciones | Cancelacion[] | Nodo que expresa las cancelaciones. |
 | xmlBase64     | string        | XML del acuse de cancelación del SAT, códificado en base64. |
@@ -122,5 +122,5 @@ XML_CANCELACION:xml_base64
 | Atributo      | Tipo          | Descripción |
 | ------------- |:------------- |:----------- |
 | uuid          | string        | UUID del CFDI procesado. | https://github.com/MarthaRiveraV/timbradoDoc/blob/master/codigosCancelacion.md
-| codigo        | string        | El código del servicio de cancelación. [Códigos de cancelación](https://github.com/MarthaRiveraV/timbradoDoc/blob/master/codigosCancelacion.md)
+| codigo        | string        | Código del servicio de cancelación. [Códigos de cancelación](https://github.com/MarthaRiveraV/timbradoDoc/blob/master/codigosCancelacion.md)
 | mensaje       | string        | En caso de que haya un error, se devolverá la descripción del mismo. |
