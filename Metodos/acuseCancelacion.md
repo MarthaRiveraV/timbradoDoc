@@ -1,7 +1,7 @@
 # Método: acuseCancelacion
 
 
-El método *acuseCancelacion* recibe el UUID (Folio fiscal) de un Comprobante Fiscal Digital por Internet (CFDI) previamente cancelado, retorna el acuse de cancelación proporcionado por el SAT codificado en base64.
+El método *acuseCancelacion* recibe el UUID (Folio fiscal) de un Comprobante Fiscal Digital por Internet (CFDI) previamente cancelado por Prodigia, retorna el acuse de cancelación proporcionado por el SAT codificado en base64.
 
 ## Request
 
