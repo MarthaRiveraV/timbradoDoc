@@ -38,7 +38,7 @@ El método *responderSolicitudCancelacionConOpciones* permite responder las peti
 | usuario       | Si        | String   | Usuario con el que se autenticará en el servicio. |
 | passwd        | Si        | String   | Contraseña del usuario con el que se autenticará en el servicio. |
 | rfcReceptor   | Si        | String   | RFC del contribuyente del que responde las peticiones de cancelación que tiene como receptor de los CFDI.
-| arregloUUID   | Si        | String[] | UUID y respuesta a la petición (`Aceptación` o `Rechazo`), separada por el carácter pipe (\|). **Ejemplo**: `UUID|Aceptacion` `UUID|Rechazo` |
+| arregloUUID   | Si        | String[] | UUID y respuesta a la petición (`Aceptacion` o `Rechazo`), separada por el carácter pipe (\|). **Ejemplo**: `UUID\|Aceptacion` `UUID\|Rechazo` |
 | cert          | Si        | byte[]   | Certificado de Sello Digital (CSD). |
 | key           | Si        | byte[]   | Llave privada del CSD. |
 | keyPass       | Si        | String   | Contraseña de la llave privada del CSD. |
