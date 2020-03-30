@@ -19,7 +19,7 @@ Todas los requests deben contener un encabezado HTTP `Content-Type: text/xml; ch
 * [cancelarConOpciones](https://github.com/MarthaRiveraV/timbradoDoc/blob/master/Metodos/cancelarConOpciones.md)
 * [cfdiPorUUID](https://github.com/MarthaRiveraV/timbradoDoc/blob/master/Metodos/cfdiPorUUID.md)
 * [consultarCfdiRelacionados](https://github.com/MarthaRiveraV/timbradoDoc/blob/master/Metodos/consultarCfdiRelacionados.md)
-* [consultarDisponibilidadServicio](https://github.com/MarthaRiveraV/timbradoDoc/blob/master/consultarDisponibilidadServicio.md)
+* [consultarDisponibilidadServicio](https://github.com/MarthaRiveraV/timbradoDoc/blob/master/Metodos/consultarDisponibilidadServicio.md)
 * [consultarEstatusComprobante](https://github.com/MarthaRiveraV/timbradoDoc/blob/master/Metodos/consultarEstatusComprobante.md)
 * [consultarPeticionesPendientes](https://github.com/MarthaRiveraV/timbradoDoc/blob/master/Metodos/consultarPeticionesPendientes.md)
 * [responderSolicitudCancelacionConOpciones](https://github.com/MarthaRiveraV/timbradoDoc/blob/master/Metodos/responderSolicitudCancelacionConOpciones.md)
