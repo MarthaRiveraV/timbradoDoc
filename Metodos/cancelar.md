@@ -32,10 +32,9 @@ El 1 de noviembre del 2018 los servicios de cancelación se actualizaron. Las fa
 | contrato      | Si        | String  | Contrato de Pade Timbrado Fiscal. | 
 | usuario       | Si        | String  | Usuario con el que se autenticará en el servicio. |
 | passwd        | Si        | String  | Contraseña del usuario con el que se autenticará en el servicio. |
-| rfcEmisor     | Si        | String  | RFC del emisor al que pertenecen los CFDI a cancelar. |
+| rfcEmisor     | Si        | String  | RFC del emisor al que pertenecen los CFDI's a cancelar. |
 | arregloUUID   | Si        |String[] | UUID, RFC Receptor, RFC Emisor y Total del CFDI a cancelar, separada por el carácter pipe (\|). **Ejemplo**: <arregloUUID>UUID\|RFC_Receptor\|RFC_Emisor\|Total</arregloUUID> |
-| cert          | Si        | byte[]  | Certificado de Sello Digital (CSD). Debe pertenecer al RFC Emisor con el que se generó los CFDI's a cancelar. |
-Debe pertenecer al RFC Emisor con el que se generó los CFDI's a cancelar.
+| cert          | Si        | byte[]  | Certificado de Sello Digital (CSD). *Debe pertenecer al RFC Emisor*. |
 | key           | Si        | byte[]  | Llave privada del CSD. |
 | keyPass       | Si        | String  | Contraseña de la llave privada del CSD. |
 
