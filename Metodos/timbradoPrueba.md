@@ -70,6 +70,12 @@ ENVIAR_AMBOS:correo@dominio.com
 **Observaciones**
 * Solo un correo electrónico por transacción de timbrado.
 
+#### GENERAR_CBB
+Esta opción te permite generar el código QR del CFDI timbrado codificado en base 64.
+
+**Formato**
+GENERAR_CBB
+
 #### GENERAR_PDF
 Esta opción retorna el PDF generado del CFDI timbrado en un arreglo de bytes codificado en base 64. 
 
@@ -94,6 +100,12 @@ Esta opción retorna la cadena original del timbre fiscal del comprobante.
 **Formato**
 REGRESAR_CADENA_ORIGINAL
 
+#### VERIFICAR_SERIE_FOLIO
+Esta opción te permite validar que la serie y folio del CFDI a timbrar, no se encuentren en otro CFDI timbrado previamente, de no pasar la validación el servicio retorna código 307 (CFDI previamente timbrado) así como el CFDI previamente timbrado.
+
+**Formato**
+VERIFICAR_SERIE_FOLIO
+
 ### Response 
 ```xml
 <servicioTimbrado>
@@ -109,6 +121,7 @@ REGRESAR_CADENA_ORIGINAL
 	<noCertificadoSAT/>
 	<selloSAT/>
 	<xmlBase64/>
+	<cbbBase64/>
 	<pdfBase64/>
 	<saldo/>
 </servicioTimbrado>
@@ -128,7 +141,8 @@ REGRESAR_CADENA_ORIGINAL
 | selloCFD         | Condicional | String | Sello del CFDI timbrado, elemento del nodo <tfd:TimbreFiscalDigital> del CFDI.  Retornado cuando la transacción es exitosa.|
 | noCertificadoSAT | Condicional | String | Número del certificado del SAT con el que se timbra el CFDI, elemento del nodo <tfd:TimbreFiscalDigital> del CFDI. Retornado cuando la transacción es exitosa. |
 | selloSAT         | Condicional | String | Sello del timbre fiscal digital del CFDI timbrado, elemento del nodo <tfd:TimbreFiscalDigital> del CFDI. Retornado cuando la transacción es exitosa. |
-| xmlBase64        | Condicional | String | XML del CFDI timbrado codificado en base 64. Retornado cuando la transacción es exitosa.
+| xmlBase64        | Condicional | String | XML del CFDI timbrado codificado en base 64. Retornado cuando la transacción es exitosa. |
+| cbbBase64        | Condicional | String | Código QR del CFDI timbrado codificado en base 64. Retornado cuando la transacción es exitosa  y se utiliza  la opción `GENERAR_CBB`.|
 | pdfBase64        | Condicional | String | PDF del CFDI timbrado en un arreglo de bytes codificado en base 64. Retornado cuando la transacción es exitosa  y se utiliza  la opción `GENERAR_PDF`. |
 | saldo            | Condicional | String | Transacciones disponibles para el contrato con el que se autentifico el usuario. Retornado cuando la transacción es exitosa y se utiliza la opción `CONSULTAR_SALDO`.
 
