@@ -2,7 +2,7 @@
 
 El método *cancelar* crea una solicitud de cancelación para uno o más Comprobantes Fiscales Digitales por Internet (CFDI).
 
-El 1 de noviembre del 2018 los servicios de cancelación se actualizaron. Las facturas en algunos casos, solo podrán cancelarse cuando el receptor de la factura acepte dicha cancelación. Te recomendamos consultar el nuevo esquema de cancelación.
+El 1 de noviembre del 2018 los servicios de cancelación se actualizaron. Las facturas en algunos casos, solo podrán cancelarse cuando el receptor de la factura acepte dicha cancelación. Te recomendamos consultar el [nuevo esquema de cancelación](https://github.com/MarthaRiveraV/timbradoDoc/blob/master/src/nuevoEsquemaCancelacion.md).
 
 ## Request
 
