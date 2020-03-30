@@ -28,9 +28,8 @@ El método *timbrado* recibe el XML de un Comprobante Fiscal Digital por Interne
 | contrato      | Si        | String   | Contrato de Pade Timbrado Fiscal. | 
 | usuario       | Si        | String   | Usuario con el que se autenticará en el servicio. |
 | passwd        | Si        | String   | Contraseña del usuario con el que se autenticará en el servicio. |
-| cfdiXmlBase64 | Si        | String   | XML del CFDI que a timbrar codificado en base 64. |
+| cfdiXmlBase64 | Si        | String   | XML del CFDI a timbrar codificado en base 64. |
 | opciones      | Si        | String[] | Opciones para el servicio. | 
-
 
 ### Opciones
 
@@ -38,11 +37,11 @@ El método *timbrado* recibe el XML de un Comprobante Fiscal Digital por Interne
 Esta opción recibe el XML de la addenda códificado en base 64, el cual sera anexado al CFDI posterior a su timbrado.
 
 **Formato**
-ADDENDA:LIBRE:adddenda_base64
+ADDENDA:LIBRE:addenda_base64
 
 **Observaciones**
-* La validacion de la addenda en contenido y estructura es responsabilidad del usuario.
-* La addenda sera anexada al CFDI en el nodo **<cfdi:Addenda>**.
+* La validación de la addenda en contenido y estructura es responsabilidad del usuario.
+* La addenda será anexada al CFDI en el nodo **<cfdi:Addenda>**.
 
 #### CALCULAR_SELLO
 Esta opción indica que se debe calcular el sello del CFDI, utilizando un certicado del usuario (previamente guardado en la plataforma [PADE Facturación](https://facturacion.pade.mx/)).
@@ -51,17 +50,17 @@ Esta opción indica que se debe calcular el sello del CFDI, utilizando un certic
 CALCULAR_SELLO
 
 **Observaciones**
-* Recupera el certificado del usuario base al atributo del CFDI `numCert`, en caso de no especificarse utiliza el certificado default.
-* Atributo "sello" del CFDI  debe estar vacio.
+* Recupera el certificado del usuario base al atributo del CFDI `NoCertificado`, en caso de no especificarse utiliza el certificado default.
+* Atributo "sello" del CFDI  debe estar vacío.
 
 #### CONSULTAR_SALDO
-Esta opción retorna las transacciones disponibles del contrato enviado después de que el servicio descuente las cancelaciones efectivamente realizadas.
+Esta opción retorna las transacciones disponibles del contrato enviado después de que el servicio descuente la transacción de timbrado realizada exitosamente.
 
 **Formato**
 CONSULTAR_SALDO
 
 #### ENVIAR_AMBOS
-Esta opción envia por correo electrónico los archivos XML y PDF del CFDI timbrado exitosamente, recibe el correo electrónico a donde se enviaran.
+Esta opción envía por correo electrónico los archivos XML y PDF del CFDI timbrado exitosamente, recibe el correo electrónico a donde se enviarán.
 
 **Formato**
 ENVIAR_AMBOS:correo@dominio.com
@@ -131,4 +130,4 @@ REGRESAR_CADENA_ORIGINAL
 | pdfBase64        | Condicional | String | PDF del CFDI timbrado en un arreglo de bytes codificado en base 64. Retornado cuando la transacción es exitosa  y se utiliza  la opción `GENERAR_PDF`. |
 | saldo            | Condicional | String | Transacciones disponibles para el contrato con el que se autentifico el usuario. Retornado cuando la transacción es exitosa y se utiliza la opción `CONSULTAR_SALDO`.
 
-**Nota**: Se define como transacción de timbrado exitosa cuando el atributo `timbradoOk` es `true` y el atributo `código` se es `0`.
+**Nota**: Se define como transacción de timbrado exitosa cuando el atributo `timbradoOk` es `true` y el atributo `codigo` es `0`.
