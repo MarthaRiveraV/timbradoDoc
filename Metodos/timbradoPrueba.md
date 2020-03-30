@@ -103,7 +103,7 @@ REGRESAR_CADENA_ORIGINAL
 	<codigo/>
 	<mensaje/>
 	<version/>
-	<uuid/>
+	<UUID/>
 	<FechaTimbrado/>
 	<selloCFD/>
 	<noCertificadoSAT/>
@@ -123,7 +123,7 @@ REGRESAR_CADENA_ORIGINAL
 | codigo           | Si          | String  | Código de la operación del servicio [Códigos del servicio](https://github.com/MarthaRiveraV/timbradoDoc/blob/master/codigos.md). / Código de la validación definido por el SAT. |
 | mensaje          | Condicional | String | En caso de que haya un error, se devolverá la descripción del mismo. De existir más de uno estos son separados por el carácter  pipe (\|). |
 | version          | Condicional | String | Versión del Timbre Fiscal Digital generado, elemento del nodo <tfd:TimbreFiscalDigital> del CFDI. Retornado cuando la transacción es exitosa. |
-| uuid             | Condicional | String | Folio fiscal asignado al CFDI timbrado, elemento del nodo <tfd:TimbreFiscalDigital> del CFDI. Retornado cuando la transacción es exitosa.|
+| UUID             | Condicional | String | Folio fiscal asignado al CFDI timbrado, elemento del nodo <tfd:TimbreFiscalDigital> del CFDI. Retornado cuando la transacción es exitosa.|
 | FechaTimbrado    | Condicional | String | Fecha de timbrado del CFDI, elemento del nodo <tfd:TimbreFiscalDigital> del CFDI.  Retornado cuando la transacción es exitosa.|
 | selloCFD         | Condicional | String | Sello del CFDI timbrado, elemento del nodo <tfd:TimbreFiscalDigital> del CFDI.  Retornado cuando la transacción es exitosa.|
 | noCertificadoSAT | Condicional | String | Número del certificado del SAT con el que se timbra el CFDI, elemento del nodo <tfd:TimbreFiscalDigital> del CFDI. Retornado cuando la transacción es exitosa. |
