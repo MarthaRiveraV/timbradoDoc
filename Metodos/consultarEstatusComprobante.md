@@ -3,7 +3,7 @@
 
 El método consultarEstatusComprobante recibe los datos de un  Comprobante Fiscal Digital por Internet (CFDI), retorna el estatus del CFDI ante el SAT. 
 
-El 1 de noviembre del 2018 los servicios de cancelación se actualizaron. Las facturas en algunos casos, solo podrán cancelarse cuando el receptor de la factura acepte dicha cancelación. Te recomendamos consultar el nuevo esquema de cancelación y utilizar este método después de crear una solicitud de cancelación para confirmar el estatus del CFDI.
+El 1 de noviembre del 2018 los servicios de cancelación se actualizaron. Las facturas en algunos casos, solo podrán cancelarse cuando el receptor de la factura acepte dicha cancelación. Te recomendamos consultar el [nuevo esquema de cancelación](https://github.com/MarthaRiveraV/timbradoDoc/blob/master/src/nuevoEsquemaCancelacion.md) y utilizar este método después de crear una solicitud de cancelación para confirmar el estatus del CFDI.
 
 ## Request 
 
