@@ -35,7 +35,7 @@ El 1 de noviembre del 2018 los servicios de cancelación se actualizaron. Las fa
 | passwd        | Si          | String    | Contraseña del usuario con el que se autenticará en el servicio. |
 | rfcEmisor     | Si          | String    | RFC del emisor al que pertenecen los CFDI a cancelar. |
 | arregloUUID   | Si           |String[]   | UUID, RFC Receptor, RFC Emisor y Total del CFDI a cancelar, separada por el carácter pipe (\|). **Ejemplo**: <arregloUUID>UUID\|RFC_Receptor\|RFC_Emisor\|Total</arregloUUID> |
-| cert          | Condicional | byte[]   | Certificado de Sello Digital (CSD). Debe ser el mismo con el que se genero el sello digital de los CFDI a cancelar. |
+| cert          | Condicional | byte[]   | Certificado de Sello Digital (CSD). *Debe pertenecer al RFC Emisor*. |
 | key           | Condicional | byte[]   | Llave privada del CSD. |
 | keyPass       | Condicional | String   | Contraseña de la llave privada del CSD. |
 | opciones      | Si          | String[] | Opciones para el servicio de cancelación. |
@@ -72,7 +72,7 @@ PKCS12:pkcs12_base64
 
 #### XML_CANCELACION 
 
-Esta opción acepta el XML de cancelación firmado con el Certificado de Sello Digital del emisor de los CFDI codificado en base 64.
+Esta opción acepta el XML de cancelación firmado con el Certificado de Sello Digital del emisor de los CFDI´s codificados en base 64.
 
 **Formato**
 XML_CANCELACION:xml_base64
