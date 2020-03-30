@@ -1,6 +1,6 @@
 # consultarCfdiRelacionados
 
-El método *consultarCfdiRelacionados* recibe el UUID (Folio fiscal) de un Comprobante Fiscal Digital por Internet (CFDI), retorna los datos de los documentaos relacionados.
+El método *consultarCfdiRelacionados* recibe el UUID (Folio fiscal) de un Comprobante Fiscal Digital por Internet (CFDI), retorna los datos de los documentos relacionados.
 
 
 ## Request
