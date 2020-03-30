@@ -120,6 +120,7 @@ VERIFICAR_SERIE_FOLIO
 	<noCertificadoSAT/>
 	<selloSAT/>
 	<xmlBase64/>
+	<cbbBase64/>
 	<pdfBase64/>
 	<saldo/>
 </servicioTimbrado>
