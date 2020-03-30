@@ -100,6 +100,12 @@ Esta opción retorna la cadena original del timbre fiscal del comprobante.
 **Formato**
 REGRESAR_CADENA_ORIGINAL
 
+#### VERIFICAR_SERIE_FOLIO
+Esta opción te permite validar que la serie y folio del CFDI a timbrar, no se encuentren en otro CFDI timbrado previamente, de no pasar la validación el servicio retorna código 307 (CFDI previamente timbrado) así como el CFDI previamente timbrado.
+
+**Formato**
+VERIFICAR_SERIE_FOLIO
+
 ### Response 
 ```xml
 <servicioTimbrado>
