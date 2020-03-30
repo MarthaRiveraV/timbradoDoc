@@ -24,3 +24,20 @@ El método consultarDisponibilidadServicio permite autentificarse ante el servic
 | contrato      | Si        | String | Contrato de Pade Timbrado Fiscal. | 
 | usuario       | Si        | String | Usuario con el que se autenticará en el servicio. |
 | passwd        | Si        | String | Contraseña del usuario con el que se autenticará en el servicio. |
+
+## Response 
+
+```xml
+<consultarDisponibilidadServicioResponse>
+  <servicioOk/>
+</consultarDisponibilidadServicioResponse>
+```
+
+### `<consultarDisponibilidadServicioResponse/>`
+
+| Atributo      | Tipo      | Descripción |
+| ------------- |:--------- |:----------- |
+| servicioOk    | boolean   | Indica si el servicio se encuentra disponible. |
+
+
+
