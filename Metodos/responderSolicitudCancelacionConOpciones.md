@@ -86,8 +86,8 @@ El método *responderSolicitudCancelacionConOpciones* permite responder las peti
 
 | Atributo    | Tipo   | Descripción |
 | ----------- |:------ |:----------- |
-| uuid        | String | Folio fiscal del CFDI que se procesa. |
-| EstatusUuid | String | Estatus del CFDI que procesa ante el SAT. |
-| respuesta   | String | Respuesta por parte del SAT. |
+| UUID        | String | Folio fiscal del CFDI que se procesa. |
+| EstatusUUID | String | Estatus del CFDI que procesa ante el SAT. |
+| Respuesta   | String | Respuesta por parte del SAT. |
 
 
